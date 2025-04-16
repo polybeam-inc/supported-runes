@@ -3,62 +3,118 @@
     "title": "RunesList",
     "type": "array",
     "items": {
-      "type": "object",
-      "required": [
-        "id", "name", "spaced_name", "number", "divisibility",
-        "symbol", "turbo", "mint_terms", "supply", "location"
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^\\d+:\\d+$"
+        "type": "object",
+        "required": [
+            "id",
+            "name",
+            "spaced_name",
+            "number",
+            "divisibility",
+            "symbol",
+            "turbo",
+            "mint_terms",
+            "location"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "pattern": "^\\d+:\\d+$"
+            },
+            "name": {
+                "type": "string"
+            },
+            "spaced_name": {
+                "type": "string"
+            },
+            "number": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "divisibility": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "symbol": {
+                "type": "string"
+            },
+            "turbo": {
+                "type": "boolean"
+            },
+            "mint_terms": {
+                "type": "object",
+                "properties": {
+                    "amount": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "cap": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "height_start": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "height_end": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "offset_start": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "offset_end": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            },
+            "location": {
+                "type": "object",
+                "required": [
+                    "block_hash",
+                    "block_height",
+                    "tx_id",
+                    "tx_index",
+                    "timestamp"
+                ],
+                "properties": {
+                    "block_hash": {
+                        "type": "string",
+                        "minLength": 64,
+                        "maxLength": 64
+                    },
+                    "block_height": {
+                        "type": "integer"
+                    },
+                    "tx_id": {
+                        "type": "string",
+                        "minLength": 64,
+                        "maxLength": 64
+                    },
+                    "tx_index": {
+                        "type": "integer"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    }
+                },
+                "additionalProperties": false
+            }
         },
-        "name": {
-          "type": "string"
-        },
-        "spaced_name": {
-          "type": "string"
-        },
-        "number": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "divisibility": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "symbol": {
-          "type": "string"
-        },
-        "turbo": {
-          "type": "boolean"
-        },
-        "mint_terms": {
-          "type": "object",
-          "properties": {
-            "amount": { "type": ["string", "null"] },
-            "cap": { "type": ["string", "null"] },
-            "height_start": { "type": ["integer", "null"] },
-            "height_end": { "type": ["integer", "null"] },
-            "offset_start": { "type": ["integer", "null"] },
-            "offset_end": { "type": ["integer", "null"] }
-          },
-          "additionalProperties": false
-        },
-        "location": {
-          "type": "object",
-          "required": ["block_hash", "block_height", "tx_id", "tx_index", "timestamp"],
-          "properties": {
-            "block_hash": { "type": "string", "minLength": 64, "maxLength": 64 },
-            "block_height": { "type": "integer" },
-            "tx_id": { "type": "string", "minLength": 64, "maxLength": 64 },
-            "tx_index": { "type": "integer" },
-            "timestamp": { "type": "integer" }
-          },
-          "additionalProperties": false
-        }
-      },
-      "additionalProperties": false
+        "additionalProperties": false
     }
-  }
-  
+}
