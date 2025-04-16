@@ -1,0 +1,29 @@
+name: Validate supported_runes.json
+
+on:
+  pull_request:
+    paths:
+      - 'supported_runes.json'
+      - 'runes.schema.json'
+  push:
+    paths:
+      - 'supported_runes.json'
+      - 'runes.schema.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli
+
+      - name: Validate supported_runes.json
+        run: ajv validate -s runes.schema.json -d supported_runes.json --strict=false
