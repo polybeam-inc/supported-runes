@@ -101,7 +101,10 @@
                         "type": "integer"
                     },
                     "tx_id": {
-                        "type": "string",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
                         "minLength": 64,
                         "maxLength": 64
                     },
@@ -115,6 +118,40 @@
                 "additionalProperties": false
             }
         },
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "name": {
+                            "const": "UNCOMMONGOODS"
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "location": {
+                            "properties": {
+                                "tx_id": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                },
+                "else": {
+                    "properties": {
+                        "location": {
+                            "properties": {
+                                "tx_id": {
+                                    "type": "string",
+                                    "minLength": 64
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ],
         "additionalProperties": false
     }
 }
