@@ -114,7 +114,7 @@
         "location": {
             "block_hash": "0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
             "block_height": 840000,
-            "tx_id": "",
+            "tx_id": null,
             "tx_index": 0,
             "timestamp": 0
         }
