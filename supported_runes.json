@@ -1,122 +1,58 @@
 [
-    {
-        "id": "840000:3",
-        "name": "DOGGOTOTHEMOON",
-        "spaced_name": "DOG•GO•TO•THE•MOON",
-        "number": 3,
-        "divisibility": 5,
-        "symbol": "🐕",
-        "turbo": false,
-        "mint_terms": {
-            "amount": null,
-            "cap": null,
-            "height_start": null,
-            "height_end": null,
-            "offset_start": null,
-            "offset_end": null
-        },
-        "location": {
-            "block_hash": "0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
-            "block_height": 840000,
-            "tx_id": "e79134080a83fe3e0e06ed6990c5a9b63b362313341745707a2bff7d788a1375",
-            "tx_index": 3,
-            "timestamp": 1713571767
-        }
-    },
-    {
-        "id": "840000:45",
-        "name": "MAGICINTERNETMONEY",
-        "spaced_name": "MAGIC•INTERNET•MONEY",
-        "number": 17,
-        "divisibility": 0,
-        "symbol": "🧙",
-        "turbo": false,
-        "mint_terms": {
-            "amount": null,
-            "cap": null,
-            "height_start": null,
-            "height_end": null,
-            "offset_start": null,
-            "offset_end": null
-        },
-        "location": {
-            "block_hash": "0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
-            "block_height": 840000,
-            "tx_id": "b84a1dd3cfb9ebb26f240afe7f17bf73f8a1b6cc9774ea26e360fbe077a26669",
-            "tx_index": 45,
-            "timestamp": 1713571767
-        }
-    },
-    {
-        "id": "845764:84",
-        "name": "BILLIONDOLLARCAT",
-        "spaced_name": "BILLION•DOLLAR•CAT",
-        "number": 94131,
-        "divisibility": 0,
-        "symbol": "🐱",
-        "turbo": true,
-        "mint_terms": {
-            "amount": "25000",
-            "cap": "40000",
-            "height_start": null,
-            "height_end": null,
-            "offset_start": null,
-            "offset_end": null
-        },
-        "location": {
-            "block_hash": "00000000000000000000fa4bf2fc53c75308c294e8a751eb9d1e1b518a9506cd",
-            "block_height": 845764,
-            "tx_id": "c5e59f3f8024c80fe7f8685c1d920f66cee5e9d4a423f3f293d844b291381ba5",
-            "tx_index": 84,
-            "timestamp": 1717054905
-        }
-    },
-    {
-        "id": "840000:41",
-        "name": "PUPSWORLDPEACE",
-        "spaced_name": "PUPS•WORLD•PEACE",
-        "number": 13,
-        "divisibility": 18,
-        "symbol": "P",
-        "turbo": true,
-        "mint_terms": {
-            "amount": null,
-            "cap": null,
-            "height_start": null,
-            "height_end": null,
-            "offset_start": null,
-            "offset_end": null
-        },
-        "location": {
-            "block_hash": "0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
-            "block_height": 840000,
-            "tx_id": "e7c6518f90775d67f1e5dc12f90c67de2dd299bb5d78d9ec759226b7a2055a71",
-            "tx_index": 41,
-            "timestamp": 1713571767
-        }
-    },
-    {
-        "id": "1:0",
-        "name": "UNCOMMONGOODS",
-        "spaced_name": "UNCOMMON•GOODS",
-        "number": 0,
-        "divisibility": 0,
-        "symbol": "⧉",
-        "turbo": false,
-        "mint_terms": {
-            "amount": "1",
-            "cap": "340282366920938463463374607431768211455",
-            "height_start": 840000,
-            "height_end": 1050000,
-            "offset_start": null,
-            "offset_end": null
-        },
-        "location": {
-            "block_hash": "0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
-            "block_height": 840000,
-            "tx_id": null,
-            "tx_index": 0,
-            "timestamp": 0
-        }
-    }
+  {
+    "divisibility": 5,
+    "id": "840000:3",
+    "name": "DOGGOTOTHEMOON",
+    "number": 3,
+    "spaced_name": "DOG•GO•TO•THE•MOON",
+    "symbol": "🐕"
+  },
+  {
+    "id": "840000:45",
+    "symbol": "🧙",
+    "name": "MAGICINTERNETMONEY",
+    "spaced_name": "MAGIC•INTERNET•MONEY",
+    "divisibility": 0,
+    "number": 17
+  },
+  {
+    "id": "840000:41",
+    "symbol": "P",
+    "name": "PUPSWORLDPEACE",
+    "spaced_name": "PUPS•WORLD•PEACE",
+    "divisibility": 18,
+    "number": 13
+  },
+  {
+    "id": "845764:84",
+    "name": "BILLIONDOLLARCAT",
+    "spaced_name": "BILLION•DOLLAR•CAT",
+    "number": 94131,
+    "divisibility": 0,
+    "symbol": "🐱"
+  },
+  {
+    "id": "1:0",
+    "symbol": "⧉",
+    "name": "UNCOMMONGOODS",
+    "spaced_name": "UNCOMMON•GOODS",
+    "divisibility": 0,
+    "number": 0
+  },
+  {
+    "id": "897845:60",
+    "symbol": "$",
+    "name": "AAAAAPEPENET",
+    "spaced_name": "AAAAA•PEPENET",
+    "divisibility": 8,
+    "number": 202002
+  },
+  {
+    "id": "897877:16",
+    "symbol": "$",
+    "name": "USDCSTARKNET",
+    "spaced_name": "USDC•STARKNET",
+    "divisibility": 6,
+    "number": 202097
+  }
 ]
